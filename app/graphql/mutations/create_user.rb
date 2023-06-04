@@ -19,4 +19,3 @@ class Mutations::CreateUser<Mutations::BaseMutation
     end
   end
 end
-

@@ -10,10 +10,12 @@ module Types
     end
 
     def users
+      puts "featching all the users  form data  base"
       User.all
     end
     
     def user(id:)
+      puts "featching the user based on the id"
       User.find(id)
     end
 
