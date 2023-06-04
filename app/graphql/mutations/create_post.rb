@@ -6,8 +6,6 @@ class Mutations::CreatePost<Mutations::BaseMutation
     field :post, Types::PostType, null: false
     field :errors, [String], null: false
     def resolve(title:, body:, userId:nil)
-        puts title
-        puts body
       post = Post.new(title: title, body:body,user_id: userId)
       if post.save
         {
